@@ -37,8 +37,7 @@ jobs:
             -var "aws_secret_key=${AWS_SECRET_KEY}" \
             -var "source_ami=${SOURCE_AMI}" \
             ubuntu-ami.json
-
-	- deploy:
+      - deploy:
           name: conditionally run a deploy job
           command: |
             # replace this with your build/deploy check (i.e. current branch is "release")
