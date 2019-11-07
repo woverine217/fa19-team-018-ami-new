@@ -2,10 +2,6 @@ version: 2
 jobs:
   build:
     working_directory: ~/fa19-team-018-ami-new
-    filter:
-      branches:
-        only:
-          - Assignment7
     docker:
       - image: circleci/python:2.7-jessie
     steps:
